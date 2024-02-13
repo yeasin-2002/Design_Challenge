@@ -1,5 +1,12 @@
+import { Hero, Nav } from "./components";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <Nav />
+      <Hero />
+    </>
+  );
 };
 
 export default App;
