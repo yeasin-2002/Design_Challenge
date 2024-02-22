@@ -1,0 +1,58 @@
+.jobListContainer {
+  margin: 5rem auto;
+  .jobListTile {
+    color: var(--gray-100);
+    font-weight: bold;
+  }
+  .jobListSubtitle {
+    color: var(--purple-primary);
+    font-weight: 500;
+  }
+}
+
+/* Buttons Start */
+
+.btn-green {
+  background-color: var(--green-primary);
+  color: white;
+  max-height: var(--size-8);
+  border-radius: var(--size-1);
+  padding: 0 var(--size-3); 
+  border: none;
+  font-weight: 400;
+
+  &:hover {
+    background-color: var(--green-secondary);
+  }
+}
+
+.btn-purple {
+  background-color: var(--purple-primary);
+  color: white;
+  max-height: var(--size-8);
+  border-radius: var(--size-1);
+  padding: 0 var(--size-3);
+  border: none;
+  font-weight: 400;
+
+  &:hover {
+    background-color: var(--purple-secondary);
+  }
+}
+
+/*  Button End */
+
+.pills {
+  border-radius: var(--size-10);
+  padding: var(--size-1) var(--size-2);
+  font-size: small;
+}
+
+.pill-purple {
+  background-color: var(--purple-primary);
+  color: white;
+}
+.pill-yellow {
+  background-color: var(--yellow-primary);
+  color: black  ;
+}

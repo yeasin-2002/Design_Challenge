@@ -1,0 +1,100 @@
+.LatestJobsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 var(--size-7);
+}
+
+.LatestJobsItem {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  margin: 1rem 0;
+  .apply-btn {
+    max-width: 10rem;
+    padding: 0.5rem 1rem;
+    &:hover {
+      background-color: var(--purple-secondary);
+    }
+  }
+
+  .jobTitle {
+    font-size: var(--size-4);
+    font-weight: 600;
+  }
+}
+
+.job-utils {
+  display: flex;
+  align-items: center;
+
+  p {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.LatestJobsCard {
+  display: flex;
+  gap: 0.5em;
+}
+
+.LatestJobsCard .company-logo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10%;
+}
+
+/*  */
+
+.futureJobContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 2rem;
+
+  .featureJobApplyBtn {
+    max-width: 10rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .jobTitle {
+    font-size: var(--size-4);
+    font-weight: 600;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--purple-secondary);
+    }
+  }
+  .jobListTile {
+    font-size: var(--size-4);
+    font-weight: 600;
+    color: var(--gray-100);
+  }
+  .jobListSubtitle {
+    color: var(--gray-200);
+    font-size: var(--size-4);
+    font-weight: 600;
+  }
+
+  .futureJobItem {
+    display: flex;
+    gap: 1rem;
+  }
+  .tagList {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .company-logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  .LatestJobsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

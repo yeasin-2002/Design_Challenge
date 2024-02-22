@@ -1,0 +1,68 @@
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --gray-100: #202025;
+  --gray-200: #77838f;
+  --gray-300: #4e4e4e;
+  --green-primary: #01b175;
+  --purple-primary: #790fe3;
+  --purple-secondary: #a566ff;
+  --yellow-primary: #ffcc00;
+  --yellow-secondary: #ffdd67;
+  --night-dark: #010100;
+  --black: #000000;
+  --blue-100: #1967d2
+
+  /* size  */
+  --size-000: -0.5rem;
+  --size-00: -0.25rem;
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 1rem;
+  --size-4: 1.25rem;
+  --size-5: 1.5rem;
+  --size-6: 1.75rem;
+  --size-7: 2rem;
+  --size-8: 3rem;
+  --size-9: 4rem;
+  --size-10: 5rem;
+  --size-11: 7.5rem;
+  --size-12: 10rem;
+  --size-13: 15rem;
+  --size-14: 20rem;
+  --size-15: 30rem;
+
+  /* fonts */
+  --font-family-alata: "Alata", Sans-serif;
+
+  /* Line height  */
+  --font-lineheight-00: 0.95;
+  --font-lineheight-0: 1.1;
+  --font-lineheight-1: 1.25;
+  --font-lineheight-2: 1.375;
+  --font-lineheight-3: 1.5;
+  --font-lineheight-4: 1.75;
+  --font-lineheight-5: 2;
+  --font-lineheight-6: 2.5;
+  --font-lineheight-7: 3;
+  --font-lineheight-8: 3.5;
+}
+
+.heroTitle {
+  color: var(--gray-100);
+  font-size: 1.5rem;
+  font-size: var(--font-size-10);
+  font-weight: 900;
+  line-height: 6rem;
+  font-family: var(--font-family-alata);
+}
+
+.Info-BLock-img {
+  width: var(--size-10) !important;
+  height: var(--size-10) !important;
+}
+
+
+.PopularJobIcon {
+    background-color: var(--blue-100);
+}

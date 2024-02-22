@@ -36,7 +36,7 @@ export const ProductInfo = ({ ...rest }: Props) => {
           >
             +
           </button>
-          <p className="bg-center ">{quantity}</p>
+          <p className="bg-center font-bold text-lg ">{quantity}</p>
           <button
             className="snow-btn"
             onClick={() => setQuantity(quantity - 1)}

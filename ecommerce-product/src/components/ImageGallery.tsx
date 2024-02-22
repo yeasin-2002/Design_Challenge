@@ -14,8 +14,10 @@ export const ImageGallery = ({ ...rest }: Props) => {
   });
 
   const imgSelectingHandler = (img: string, index: number) => {
-    const newUrl = URL.createObjectURL(img);
-    setSelectedImg({ imgUrl: newUrl, id: index });
+    setSelectedImg({
+      imgUrl: img,
+      id: index,
+    });
   };
   return (
     <div {...rest} className="p-6">
@@ -24,7 +26,7 @@ export const ImageGallery = ({ ...rest }: Props) => {
         alt=""
         className={`aspect-square rounded-lg  `}
       />
-      <div className="grid grid-cols-4 mt-4 gap-x-2">
+      <div className="lg:grid grid-cols-4 mt-4 gap-x-2 hidden">
         {productImg.map((value, i) => (
           <img
             key={value}

@@ -1,0 +1,162 @@
+#about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 5rem 0px;
+
+  .about-banner {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    img {
+      /* width: 60%; */
+      width: 80%;
+      height: 100%;
+    }
+  }
+  .about-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    h3 {
+      font-size: var(--size-8);
+      color: var(--night-dark);
+      font-weight: 600;
+      font-family: var(--font-family-alata);
+
+      span {
+        color: var(--purple-primary);
+      }
+    }
+    p {
+      color: var(--gray-300);
+      font-weight: 400;
+      line-height: var(--size-6);
+      font-size: var(--size-4);
+    }
+  }
+
+  .about-details {
+    word-spacing: 2px;
+  }
+}
+
+#about-work {
+  margin: 5rem 0px;
+  p {
+    text-align: left;
+    color: var(--black);
+    font-family: var(--font-family-alata);
+    font-size: var(--size-7);
+    font-weight: 600;
+  }
+
+  .work-containers-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .work-avatar-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .work-avatar {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .work-container {
+      margin: 5rem 0px;
+
+      .work-item {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        box-shadow: 0px 0px 10px 0px
+          rgba(137.25, 133.3059273097826, 133.3059273097826, 0.5);
+        width: 100%;
+        flex: 0 1 auto;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 1rem 0px;
+        font-size: var(--size-2);
+
+        img {
+          width: 2rem;
+          height: 2rem;
+        }
+        p {
+          color: var(--gray-300);
+          font-weight: 400;
+          line-height: var(--size-6);
+          font-size: var(--size-4);
+        }
+      }
+    }
+  }
+}
+
+#stepsForJob {
+  h4 {
+    font-size: var(--size-8);
+    color: var(--night-dark);
+    font-weight: 600;
+    font-family: var(--font-family-alata);
+    span {
+      color: var(--purple-primary);
+    }
+  }
+
+  #jobSteps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 5rem 0px;
+
+    .jobStep-item {
+      border-radius: 20px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px 0px
+        rgba(135, 130.0108695652174, 130.0108695652174, 0.5);
+      transition: background 0.3s, border 0.3s, border-radius 0.3s,
+        box-shadow 0.3s;
+      margin: 0px 0px 83px 0px;
+      --black: 0px;
+      --night-dark: 0px;
+      padding: var(--size-4);
+
+      h4 {
+        font-size: var(--size-4);
+        color: var(--night-dark);
+        font-weight: 600;
+        text-align: center;
+        padding-top: 1.5rem;
+      }
+      .devider {
+        width: 40%;
+        height: 1px;
+        border: dashed 0.5px #ffad005e;
+        margin: 1rem auto;
+      }
+
+      .stepIcon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          padding: var(--size-2);
+          font-size: var(--size-4);
+          border-radius: 10px;
+          background-color: var(--yellow-primary);
+          /* color: var(--yellow-secondary); */
+        }
+      }
+    }
+  }
+}
